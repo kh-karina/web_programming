@@ -1,4 +1,3 @@
-
 :root {
     --typography-main-size: 20px;
     --typography-main-weight: bold;
@@ -21,10 +20,12 @@
 }
 
 
+
 *{
     margin: 0;
     font-family: "Inter", sans-serif;
 }
+
 
 header{
     position: sticky;
@@ -148,7 +149,9 @@ input {
 
 .icons_img {
     height:fit-content;
+    pointer-events: none;
 }
+
 
 .main_body {
     flex-direction: column;
@@ -225,16 +228,16 @@ input {
 }
 
 .product_card .product_desc{
+    min-height: 90px;
+    max-height: 90px;
+    overflow: hidden;
+
+    padding-bottom: 10px;
     padding-right: 10px;
     padding-top: 10px;
     margin-bottom: 10px;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 6;   /* Для старых браузеров */
-    line-clamp: 6;          /* Новый стандарт */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
 }
 
 .product_desc .p{
@@ -298,22 +301,173 @@ input {
 }
 
 
+
 .search{
     font-size: var(--typography-input-size);
 }
 
+.main_body{
+    height: 100%;
+}
 
-.banner_text{
+.main_material_section{
+    background: var(--background-color-products-grid);
+    height: 100%;
     display: flex;
-    height: 40px;
-    background-color: var(--background-color-white);
-    font-weight: var(--typography-main-weight);
-    font-size: var(--typography-main-size);
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: left;
+    min-height: 804px;
+    
+}
+.content{
+    height: 100%;
+    justify-content: center;
     width: 100%;
-    text-align: left;
+    display: flex;
+}
+
+.product__card{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color-white);
+    width: fit-content;
     height: fit-content;
-    padding: 10px 10px 10px 50px;
-    line-height: 24px;
-    justify-content: left; 
+    gap: 100px;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__card__right{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+.product__photo{
+    aspect-ratio: 1 / 1;
+   
+    max-height: 410px;
+}
+
+.product__name{
+    height: 72px;
+    font-size: var(--typography-main-size);
+}
+.content{
+    padding: 50px 50px 15px 50px;
+    height: 100%;
+}
+
+.product__desc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product__text{
+    font-size: 16px;
+    height: 110px;
+
+}
+
+.product__params{
+    background: var(--background-color-courisel);
+    color: var(--background-color-white);
+    border-radius: 10px;
+    height: 44px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+option{
+    background: #F0F0F0;
+    color: black;
+    border-radius: 10px;
+    height: 44px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    /* Standard property */
+    appearance: none;
+    /* WebKit prefix for older support */
+     -webkit-appearance: none;
+    /* Remove default arrow (often needed with appearance: none) */
+}
+
+
+
+.desc__box{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;   /* Для старых браузеров */
+  line-clamp: 4;          /* Новый стандарт */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product_pm_btn{
+    display: flex;
+    width: 100%;
+    justify-content:start;
+}
+
+.product_price{
+    display: flex;
+    width: 100%;
+}
+
+.price{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.to_cart{
+    background: var(--background-color-2_main);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--background-color-white);
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+
+}
+
+.banner{
+    font-size: 15px;
+}
+
+.page{
+    height: 100%;
+}
+
+
+.left_panel {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    height: 100px;
+}
+
+.return {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center; /* Прижать к верху */
+    justify-content: left; /* Центрировать по горизонтали */
+}
+
+.return_btn {
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Иконка прижата к верху кнопки */
+    justify-content: left; /* Центрируем по горизонтали */
 }
