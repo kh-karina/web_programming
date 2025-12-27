@@ -1,5 +1,5 @@
-// scripts/search-results.js
 import { products } from './data.js';
+import { initCart } from './api/cart-handler.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Страница результатов поиска загружена');
@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Очищаем контейнер и рендерим результаты
     renderSearchResults(filteredProducts);
+    
+    // ★ ВАЖНО: Инициализируем корзину ПОСЛЕ создания карточек ★
+    initCart();
     
     // Настраиваем кнопки
     setupButtons();
@@ -94,7 +97,7 @@ function renderSearchResults(filteredProducts) {
                     <img src="${product.image}" alt="${product.name}" class="product_image">
                     <span class="product_price">${product.price} ₽</span>
                     <div class="product_desc"><p>${product.description}</p></div>
-                    <button class="add_cart">в корзину</button>
+                    <button class="add_cart" data-id="${product.id}">в корзину</button>
                 `;
 
                 // Обработчик клика на карточку
@@ -105,11 +108,11 @@ function renderSearchResults(filteredProducts) {
                     }
                 });
                 
-                // Обработчик для кнопки "в корзину"
-                card.querySelector('.add_cart').addEventListener('click', (event) => {
-                    event.stopPropagation();
-                    console.log('Добавить в корзину:', product.id);
-                });
+                // ★ УДАЛИТЕ этот обработчик - initCart() будет обрабатывать клики ★
+                // card.querySelector('.add_cart').addEventListener('click', (event) => {
+                //     event.stopPropagation();
+                //     console.log('Добавить в корзину:', product.id);
+                // });
                 
             } else {
                 // Пустая карточка

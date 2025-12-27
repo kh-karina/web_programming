@@ -1,4 +1,3 @@
-// scripts/data.js
 export const products = [
   /*  1 */
   {
@@ -6,7 +5,7 @@ export const products = [
     name: "Корм для собак \"Пушистый»",
     price: 299,
     description: "Натуральный корм с курицей и рисом. Плюшевые хвостики и мягкая шерсть гарантированы!",
-    image: "img/news.svg",
+    image: "../img/products/p1.jpg",
     category: "собаки"
   },
   /*  2 */
@@ -15,7 +14,7 @@ export const products = [
     name: "Плюшевый мяч для кошек",
     price: 149,
     description: "Мягкий мячик, идеально подходит для игривых кошек. Звончики добавляют звуковой эффект.",
-    image: "img/products/p2.jpg",
+    image: "../img/products/p2.jpg",
     category: "кошки"
   },
   /*  3 */
@@ -24,7 +23,7 @@ export const products = [
     name: "Корм для грызунов «Нутри‑Норм»",
     price: 199,
     description: "Сбалансированный рацион для мышей, хомячков и грызунов. Содержит витамины и минералы.",
-    image: "src/img/products/p3.jpg",
+    image: "../img/products/p3.jpg",
     category: "грызуны"
   },
   /*  4 */
@@ -33,7 +32,7 @@ export const products = [
     name: "Шарик‑игрушка «Резиновый»",
     price: 79,
     description: "Резиновая игрушка с запахом мяса – любимец любой собаки.",
-    image: "src/img/products/p4.jpg",
+    image: "../img/products/p4.jpg",
     category: "собаки"
   },
   /*  5 */
@@ -42,7 +41,7 @@ export const products = [
     name: "Шёлковый шарф «Кошачий»",
     price: 259,
     description: "Лёгкий и мягкий шарф, который будет выглядеть стильно в любых лапках.",
-    image: "img/products/p5.jpg",
+    image: "../img/products/p5.jpg",
     category: "кошки"
   },
   /*  6 */
@@ -51,7 +50,7 @@ export const products = [
     name: "Вакцина «Собаки» 5 шт.",
     price: 349,
     description: "Полный курс вакцинации: дифтерия, парвовирус, бешенство, лептоспироз, парвовирус.",
-    image: "img/products/p6.jpg",
+    image: "../img/products/p6.jpg",
     category: "ветаптека"
   },
   /*  7 */
@@ -60,7 +59,7 @@ export const products = [
     name: "Ветеринарный щипцы «Профи»",
     price: 199,
     description: "Удобные щипцы для чистки ушей и зубов. Антибактериальный покрытие.",
-    image: "img/products/p7.jpg",
+    image: "../img/products/p7.jpg",
     category: "ветаптека"
   },
   /*  8 */
@@ -69,7 +68,7 @@ export const products = [
     name: "Книга «Трудности в питомниках»",
     price: 589,
     description: "Инструкция по уходу за питомцами, от новобранцев до опытных хозяев.",
-    image: "img/products/p8.jpg",
+    image: "../img/products/p8.jpg",
     category: "новости"
   },
   /*  9 */
@@ -78,7 +77,7 @@ export const products = [
     name: "Корм для кошек «Милашка»",
     price: 279,
     description: "Корм из рыбы и курицы. Полноценный рацион для активных кошек.",
-    image: "img/products/p9.jpg",
+    image: "../img/products/p9.jpg",
     category: "кошки"
   },
   /* 10 */
@@ -87,7 +86,7 @@ export const products = [
     name: "Игрушка «Сапфир» – мячик‑песок",
     price: 189,
     description: "Мячик, в котором прячется лакомство. Отлично развивает нюх.",
-    image: "img/products/p10.jpg",
+    image: "../img/products/p10.jpg",
     category: "собаки"
   },
   /* 11 */
@@ -96,7 +95,7 @@ export const products = [
     name: "Ароматический спрей «Лавандовый»",
     price: 129,
     description: "Успокаивает нервную систему животных, уменьшает агрессию.",
-    image: "img/products/p11.jpg",
+    image: "../img/products/p11.jpg",
     category: "ветаптека"
   },
   /* 12 */
@@ -105,7 +104,7 @@ export const products = [
     name: "Корм для грызунов «Пушкин»",
     price: 159,
     description: "Микро‑корм с высоким содержанием клетчатки и витаминов.",
-    image: "img/products/p12.jpg",
+    image: "../img/products/p12.jpg",
     category: "грызуны"
   },
   /* 13 */
@@ -114,7 +113,7 @@ export const products = [
     name: "Покрывало «Облако»",
     price: 359,
     description: "Мягкое, водонепроницаемое покрывало для лежачих мест питомцев.",
-    image: "img/products/p13.jpg",
+    image: "../img/products/p13.jpg",
     category: "собаки"
   },
   /* 14 */
@@ -123,7 +122,7 @@ export const products = [
     name: "Корм для кошек «Кошачья корона»",
     price: 299,
     description: "Натуральный корм с рыбой, курицей и кефиром. Полноценный рацион.",
-    image: "img/products/p14.jpg",
+    image: "../img/products/p14.jpg",
     category: "кошки"
   },
   /* 15 */
@@ -132,7 +131,7 @@ export const products = [
     name: "Кость для собак «Смех»",
     price: 109,
     description: "Кость из натурального каучука, которую собака любит грызть и хранить.",
-    image: "img/products/p15.jpg",
+    image: "../img/products/p15.jpg",
     category: "собаки"
   },
   /* 16 */
@@ -141,7 +140,7 @@ export const products = [
     name: "Набор «Уход» для кошек",
     price: 549,
     description: "Набор: шампунь, щетка, лакомства, когтеточка. Всё, что нужно для домашнего ухода.",
-    image: "img/products/p16.jpg",
+    image: "../img/products/p16.jpg",
     category: "кошки"
   }
 ];

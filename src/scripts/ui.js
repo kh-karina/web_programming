@@ -1,7 +1,6 @@
 // scripts/ui.js
 import { products } from "./data.js";
 
-/** Ваша оригинальная функция renderProducts */
 export const renderProducts = (productsToShow = products) => {
     const container = document.querySelector('.products_section');
     if (!container) return;
@@ -25,10 +24,9 @@ export const renderProducts = (productsToShow = products) => {
                     <img src="${product.image}" alt="${product.name}" class="product_image">
                     <span class="product_price">${product.price} ₽</span>
                     <div class="product_desc"><p>${product.description}</p></div>
-                    <button class="add_cart">в корзину</button>
+                    <button class="add_cart" data-id="${product.id}">в корзину</button>
                 `;
 
-                // Только ПОСЛЕ добавления HTML находим кнопку
                 const addCartBtn = card.querySelector('.add_cart');
                 
                 // Обработчик клика на карточку
@@ -57,7 +55,7 @@ export const renderProducts = (productsToShow = products) => {
         container.appendChild(row);
     }
     
-    // После рендеринга карточек, настраиваем поиск
+    // 
     setupSearch();
 };
 
@@ -65,19 +63,19 @@ export const renderProducts = (productsToShow = products) => {
 const setupSearch = () => {
     const searchInput = document.querySelector('.search');
     const findButton = document.querySelector('.find_btn');
-    const searchForm = document.querySelector('form'); // находим форму
+    const searchForm = document.querySelector('form'); 
     
     if (!searchInput || !findButton || !searchForm) return;
     
     // 1. Предотвращаем отправку формы
     searchForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // ВАЖНО: предотвращаем перезагрузку
+        event.preventDefault(); // 
         performSearch();
     });
     
     // 2. Обработчик для кнопки
     findButton.addEventListener('click', (event) => {
-        event.preventDefault(); // ВАЖНО: предотвращаем отправку формы
+        event.preventDefault(); // предотвращаем отправку формы
         performSearch();
     });
     
