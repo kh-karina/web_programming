@@ -1,0 +1,19 @@
+{
+  "name": "pet-store",
+  "version": "1.0.0",
+  "description": "Магазин товаров для домашних животных",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "parcel serve src/hw1-1-page.html src/hw1-2-page.html src/hw1-3-page.html --port 1234",
+    "watch": "parcel watch src/hw1-1-page.html src/hw1-2-page.html src/hw1-3-page.html",  
+    "build": "parcel build src/hw1-1-page.html src/hw1-2-page.html src/hw1-3-page.html --dist-dir dist",
+    "start": "node src/scripts/page-1.js",   
+    "test": "echo \"No tests configured\" && exit 0",
+    "lint": "eslint . --ext .js,.mjs"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
