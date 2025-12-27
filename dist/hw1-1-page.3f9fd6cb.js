@@ -1,0 +1,12 @@
+import"./hw1-1-page.801e51bf.js";var e=globalThis,t={},r={},a=e.parcelRequiree950;null==a&&((a=function(e){if(e in t)return t[e].exports;if(e in r){var a=r[e];delete r[e];var c={id:e,exports:{}};return t[e]=c,a.call(c.exports,c,c.exports),c.exports}var n=Error("Cannot find module '"+e+"'");throw n.code="MODULE_NOT_FOUND",n}).register=function(e,t){r[e]=t},e.parcelRequiree950=a),a.register;var c=a("eFtuE");let n=(e=c.products)=>{let t=document.querySelector(".products_section");if(!t)return;t.innerHTML="";let r=5*Math.ceil(e.length/5);for(let a=0;a<r;a+=5){let r=document.createElement("section");r.className="products_row";for(let t=a;t<a+5;t++){let a=document.createElement("article");if(a.className="product_card",t<e.length){let r=e[t];a.innerHTML=`
+                    <img src="${r.image}" alt="${r.name}" class="product_image">
+                    <span class="product_price">${r.price} \u{20BD}</span>
+                    <div class="product_desc"><p>${r.description}</p></div>
+                    <button class="add_cart" data-id="${r.id}">\u{432} \u{43A}\u{43E}\u{440}\u{437}\u{438}\u{43D}\u{443}</button>
+                `,a.querySelector(".add_cart"),a.addEventListener("click",e=>{e.target.classList.contains("add_cart")||e.target.closest(".add_cart")||(window.location.href=`./hw1-2-page.html?id=${r.id}`)})}else a.classList.add("empty_card"),a.innerHTML=`
+                    <div class="product_image" style="background-color: #f0f0f0;"></div>
+                    <span class="product_price" style="opacity: 0;">\u{2014}</span>
+                    <div class="product_desc"><p>\u{41D}\u{435}\u{442} \u{442}\u{43E}\u{432}\u{430}\u{440}\u{430}</p></div>
+                    <button class="add_cart" disabled style="opacity: 0.5;">\u{2014}</button>
+                `;r.appendChild(a)}t.appendChild(r)}d()},d=()=>{let e=document.querySelector(".search"),t=document.querySelector(".find_btn"),r=document.querySelector("form");function a(){let t=e.value.trim();console.log("Выполняется поиск:",t),""===t?n(c.products):(console.log("Переход на hw1-3-page.html?search=",encodeURIComponent(t)),window.location.href=`./hw1-3-page.html?search=${encodeURIComponent(t)}`)}e&&t&&r&&(r.addEventListener("submit",e=>{e.preventDefault(),a()}),t.addEventListener("click",e=>{e.preventDefault(),a()}),e.addEventListener("keypress",e=>{"Enter"===e.key&&(e.preventDefault(),a())}))};var o=a("gjrYk");document.addEventListener("DOMContentLoaded",()=>{n(),(0,o.initCart)()});
+//# sourceMappingURL=hw1-1-page.3f9fd6cb.js.map
