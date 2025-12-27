@@ -212,7 +212,8 @@ input {
 
 .product_card .product_image {
     aspect-ratio: 1 / 1;
-    height: 100%
+    width: 100%;
+    height: auto;
 
 }
 
@@ -271,6 +272,7 @@ input {
 .couresel_img {
     min-width: 700px;
     height:100%;
+
 }
 
 .label{
