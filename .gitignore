@@ -1,2 +1,3 @@
-ignore my-parcel-app/
-ignore node_modules/
+.parcel-cache/
+dist/
+node_modules/
