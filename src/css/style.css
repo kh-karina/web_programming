@@ -212,7 +212,7 @@ input {
 
 .product_card .product_image {
     aspect-ratio: 1 / 1;
-    height: 100%
+    width: 100%;
 
 }
 
